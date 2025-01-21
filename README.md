@@ -2,9 +2,8 @@
 
 This repository presents my (Joseph Myers's) suggestions for
 appropriate conventions for Lean formalizations of IMO problem
-statements, along with (eventually) examples of problem statements
-formalized following those conventions (examples planned for the
-repository, but not yet ready).
+statements, along with examples of problem statements formalized
+following those conventions.
 
 It represents my personal views on appropriate conventions for such
 formalizations (along with a set of formalizations intended to be
