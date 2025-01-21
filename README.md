@@ -211,18 +211,11 @@ statement on its own.
   the contestant to work out the correspondence between different
   versions.
 
-* Statements here have imports minimized for the statement with
-  `#min_imports` (it's possible in some cases, because of updates to
-  mathlib versions over time or failure to run `#min_imports`, that
-  the imports are no longer minimal, but that is not intentional).
-  When problems are given to AIs, they should have either freshly
-  minimized imports, or a standard set of imports such as `import
-  Mathlib`.  An AI may choose to add other imports (from mathlib or
-  its dependencies) relevant to its solution, as long as the types
-  used for the problem statement, and any answer the AI is to
-  determine, remain definitionally equal to those presented to the AI
-  (as a function of the answer, in the case where the AI has to
-  provide an answer to a "determine" problem).
+* Statements use `import Mathlib`.  Mathlib`.  An AI may modify
+  imports, as long as the types used for the problem statement, and
+  any answer the AI is to determine, remain definitionally equal to
+  those presented to the AI (as a function of the answer, in the case
+  where the AI has to provide an answer to a "determine" problem).
 
 * Each source file contains a single `theorem` (using `sorry` in its
   proof) for the problem statement.  That theorem is intended to be
