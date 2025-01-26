@@ -426,7 +426,9 @@ P6](https://arxiv.org/pdf/2205.11491#page=30) once ran into an
 incorrect formal statement in miniF2F that wrongly used truncating
 subtraction.  Division of natural numbers or integers returns a
 rational number in informal mathematics, not another natural number or
-integer.
+integer.  Square roots of negative numbers are either undefined or
+return a complex number in informal mathematics, rather than
+defaulting to zero as in mathlib.
 
 A basic principle for formal statements is that they should not ask
 the solver to prove something about junk values because those are not
@@ -452,7 +454,11 @@ cases, the well-known expression may be used without needing extra
 hypotheses or casts to `ℚ`.  Similarly, when dividing by a value that
 is obviously nonzero (typically because it is positive for structural
 reasons such as being a sum of a positive value and a nonnegative
-value), such hypotheses may also be avoided.
+value), or taking the square root of a value that is obviously
+nonnegative, such hypotheses may also be avoided.  An expression `a <
+b - c` for `a b c : ℕ` is also valid (as when the subtraction uses a
+junk value, the inequality is always false for both the junk value and
+the mathematical result of the subtraction).
 
 On rare occasions, a problem might explicitly use an expression for
 which junk values are correct (for example, explicitly applying the
@@ -513,6 +519,17 @@ property should be expressed using `IsLeast` or `IsGreatest`.  Note
 that proving such a result includes proving that such a least or
 greatest value exists; it is generally not valid from an informal
 statement to assume that without proving it.
+
+Statements about primality use `Nat.Prime` (or the combination of
+being greater than 1 and not prime for a composite number).
+Coprimality uses `Nat.Coprime`.  If all the (positive) divisors of a
+positive integer are needed, use `Nat.divisors`; `Nat.primeFactors`,
+`Nat.primeFactorsList` and `Nat.factorization` may be used when a
+factorization is needed in a different form.
+
+To assert that a number in one type can be expressed in another type
+(for example, that a real number is rational), use constructs such as
+`x ∈ Set.range ((↑·) : ℤ → ℝ)`.
 
 See subsequent sections for more details on the use of standard
 definitions in the particular cases of graphs, games and geometry
