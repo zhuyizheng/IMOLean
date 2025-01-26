@@ -402,6 +402,12 @@ appropriate subtype (typically given by an interval) is used in the
 formal statement rather than applying any adjustment to indices for
 the formal statement other than converting from 1-based to 0-based.
 
+In a case (such as IMO 2022 P1) where the problem asks to determine
+indices with a given property, the indices in the `answer` to be
+determined are as in the informal statement (although the rest of the
+formal problem statement still works with 0-based indices when
+indicated by the above conventions).
+
 ## Default (junk) values
 
 There are various cases where informal mathematics uses partial
