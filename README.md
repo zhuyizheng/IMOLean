@@ -515,10 +515,14 @@ particular, `Monotone`, `Antitone`, `StrictMono`, `StrictAnti`,
 are given as pairwise different, this is `Function.Injective`.
 Monotonicity may be given in forms such as $a_1 \le a_2 \le \dots \le
 a_n$, which should still be translated to use definitions such as
-`Monotone`.  Bundled `Function.Embedding` and `Equiv` should be used
-in problems where a function, or combinatorial configuration
-information, is given together with information about being injective
-or bijective.
+`Monotone`.  Similarly, `Monovary` and `Antivary` should be used when
+appropriate; the definitions allow one function to take equal values
+when the other does not, but this is still sufficient when the problem
+uses strict inequality if the functions are given as injective (for
+example, IMO 2020 P4).  Bundled `Function.Embedding` and `Equiv`
+should be used in problems where a function, or combinatorial
+configuration information, is given together with information about
+being injective or bijective.
 
 The proposition that a value is the least or greatest with a given
 property should be expressed using `IsLeast` or `IsGreatest`.  Note
@@ -536,6 +540,19 @@ factorization is needed in a different form.
 To assert that a number in one type can be expressed in another type
 (for example, that a real number is rational), use constructs such as
 `x ∈ Set.range ((↑·) : ℤ → ℝ)`.
+
+When a problem involves dividing some collection into two parts, it's
+generally appropriate for the formal statement to refer to one part as
+the complement of the other (using `ᶜ` or set difference as
+appropriate) rather than separately naming the two parts and having
+hypotheses on their union and (empty) intersection.  In such cases,
+statements about the number of elements with some property in one part
+may sometimes immediately imply such a statement for the other part,
+and then only one part of such a statement needs to be given (in
+definitions, hypotheses or conclusions).  See, for example, IMO 2020
+P3, IMO 2021 P1 and IMO 2022 P1 (in the last case, the formal
+statement asserts `2 * n` coins of which `n` are of one type, rather
+than literally `n` of each type).
 
 See subsequent sections for more details on the use of standard
 definitions in the particular cases of graphs, games and geometry
