@@ -753,7 +753,7 @@ missing definitions for those problems listed as "OK" in this list.
 * IMO 2012 P1: excircle / excenter / extouch points and tangency.
 * IMO 2012 P5: OK.
 * IMO 2013 P3: excircles / extouch points and tangency.
-* IMO 2013 P4: diameters.
+* IMO 2013 P4: acute-angled triangle, diameters.
 * IMO 2014 P3: convex polygons (quadrilateral), interior of a triangle, tangency.
 * IMO 2014 P4: acute-angled triangle.
 * IMO 2015 P3: cyclic order of five points on a circle, tangency of circles.
