@@ -511,18 +511,19 @@ same standard formal definition, and in such cases it is appropriate
 to use the standard formal definition from mathlib rather than
 replicating the details of how it was restated in a given problem.  In
 particular, `Monotone`, `Antitone`, `StrictMono`, `StrictAnti`,
-`Pairwise` and `Set.Pairwise` should be used as appropriate; if values
-are given as pairwise different, this is `Function.Injective`.
-Monotonicity may be given in forms such as $a_1 \le a_2 \le \dots \le
-a_n$, which should still be translated to use definitions such as
-`Monotone`.  Similarly, `Monovary` and `Antivary` should be used when
-appropriate; the definitions allow one function to take equal values
-when the other does not, but this is still sufficient when the problem
-uses strict inequality if the functions are given as injective (for
-example, IMO 2020 P4).  Bundled `Function.Embedding` and `Equiv`
-should be used in problems where a function, or combinatorial
-configuration information, is given together with information about
-being injective or bijective.
+`Pairwise` and `Set.Pairwise` should be used as appropriate (including
+`Set.Pairwise` on the coercion of a `Finset`, when a `Finset` is being
+used); if values are given as pairwise different, this is
+`Function.Injective`.  Monotonicity may be given in forms such as $a_1
+\le a_2 \le \dots \le a_n$, which should still be translated to use
+definitions such as `Monotone`.  Similarly, `Monovary` and `Antivary`
+should be used when appropriate; the definitions allow one function to
+take equal values when the other does not, but this is still
+sufficient when the problem uses strict inequality if the functions
+are given as injective (for example, IMO 2020 P4).  Bundled
+`Function.Embedding` and `Equiv` should be used in problems where a
+function, or combinatorial configuration information, is given
+together with information about being injective or bijective.
 
 The proposition that a value is the least or greatest with a given
 property should be expressed using `IsLeast` or `IsGreatest`.  Note
@@ -704,6 +705,12 @@ are not included in the case where there is also a reference in the
 problem to a triangle including those two points, or to strict
 betweenness of three points including those two.  A reference to a
 triangle is taken to mean a nondegenerate triangle.
+
+If a line or plane is referred to other than by naming points that
+produce it as an affine span, a hypothesis on the `finrank` of the
+`AffineSubspace` is sufficient to assert that it is a line or a plane,
+without needing to add an explicit `FiniteDimensional` hypothesis
+(since any finite `finrank` implies `FiniteDimensional`).
 
 If betweenness is stated, it is taken to be strict betweenness.
 However, segments and sides are taken to include their endpoints
