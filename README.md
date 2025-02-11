@@ -714,6 +714,9 @@ them.  A reference to a point being on a side or a segment is
 expressed directly with `Wbtw` rather than more literally with
 `affineSegment`.
 
+Distance between a point and a line (or other set) uses
+`Metric.infDist`.
+
 ## Geometrical statements in non-geometry problems
 
 Geometrical statements often appear in non-geometry and combinatorial
@@ -769,7 +772,7 @@ missing definitions for those problems listed as "OK" in this list.
 * IMO 2021 P4: convex quadrilateral, tangency, ray beyond.
 * IMO 2022 P4: convex pentagon and its interior, order of four points on a line.
 * IMO 2023 P2: midpoint of arc, tangency, angle bisector, acute-angled triangle.
-* IMO 2023 P6: equilateral triangle, interior of a triangle, scalene triangle.
+* IMO 2023 P6: interior of a triangle.
 * IMO 2024 P4: incenter / incircle, tangency.
 
 The following are non-geometry and combinatorial geometry problems in
@@ -788,7 +791,7 @@ indicating what definitions should be added.
 * IMO 2016 P3: convex (cyclic) polygon, area of that polygon.
 * IMO 2017 P3: OK.
 * IMO 2018 P4: OK (only technically geometrical for \sqrt{5} distance)
-* IMO 2020 P6: distance from point to line (common enough concept that it's useful as bundled definition).
+* IMO 2020 P6: OK.
 
 The following are pre-2006 problems where some definition not in the
 above lists seems appropriate to add to mathlib for a clean formal
@@ -809,7 +812,7 @@ preparing the pre-2006 list.
 * IMO 1961 P5: geometrical construction
 * IMO 1962 P5: geometrical construction, quadrilateral with circle inscribed
 * IMO 1962 P6: (isosceles triangle not specifying which two edges equal)
-* IMO 1962 P7: regular tetrahedron (i.e. property of a simplex being flag-transitive), (tangency of sphere to line in 3D)
+* IMO 1962 P7: (tangency of sphere to line in 3D)
 * IMO 1963 P3: polygon and its interior angles (note that interior angles of a polygon aren't one of the kinds of angle currently in mathlib)
 * IMO 1964 P3: area of a circle
 * IMO 1964 P6: volume of a tetrahedron
@@ -820,7 +823,6 @@ preparing the pre-2006 list.
 * IMO 1967 P4: geometrical construction
 * IMO 1971 P2: convex polyhedron and its vertices
 * IMO 1972 P2: dissection of quadrilateral into quadrilaterals (= tiling of quadrilateral by quadrilaterals, roughly)
-* IMO 1972 P6: regular tetrahedron
 * IMO 1973 P4: length of a path in the plane (is this in mathlib?)
 * IMO 1976 P3: tiling in 3D
 * IMO 1978 P2: interior of a sphere
