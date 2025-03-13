@@ -750,7 +750,7 @@ not by statements).  I don't think there are any such significant gaps
 in API for non-geometry problems without geometrical elements, or
 missing definitions for those problems listed as "OK" in this list.
 
-* IMO 2006 P1: incenter, interior of triangle.
+* IMO 2006 P1: incenter.
 * IMO 2007 P2: parallelogram, cyclic quadrilateral, angle bisector.
 * IMO 2007 P4: angle bisector, area of triangle.
 * IMO 2008 P1: acute-angled triangle (i.e. simplex).
@@ -758,13 +758,13 @@ missing definitions for those problems listed as "OK" in this list.
 * IMO 2009 P2: tangency.
 * IMO 2009 P4: angle bisectors, incenter.
 * IMO 2010 P2: incenter, arcs.
-* IMO 2010 P4: interior of triangle, tangency.
+* IMO 2010 P4: tangency.
 * IMO 2011 P6: tangency (both line-to-circle and of two circles), triangle determined by lines, acute triangle.
 * IMO 2012 P1: excircle / excenter / extouch points and tangency.
 * IMO 2012 P5: OK.
 * IMO 2013 P3: excircles / extouch points and tangency.
 * IMO 2013 P4: acute-angled triangle.
-* IMO 2014 P3: convex polygons (quadrilateral), interior of a triangle, tangency.
+* IMO 2014 P3: convex polygons (quadrilateral), tangency.
 * IMO 2014 P4: acute-angled triangle.
 * IMO 2015 P3: cyclic order of five points on a circle, tangency of circles.
 * IMO 2015 P4: order of four points on a line.
@@ -775,11 +775,11 @@ missing definitions for those problems listed as "OK" in this list.
 * IMO 2019 P2: OK.
 * IMO 2019 P6: incenter / incircle and tangency / intouch points.
 * IMO 2020 P1: convex quadrilateral and its interior, angle bisectors.
-* IMO 2021 P3: interior of a triangle.
+* IMO 2021 P3: acute-angled triangle.
 * IMO 2021 P4: convex quadrilateral, tangency, ray beyond.
 * IMO 2022 P4: convex pentagon and its interior, order of four points on a line.
 * IMO 2023 P2: midpoint of arc, tangency, angle bisector, acute-angled triangle.
-* IMO 2023 P6: interior of a triangle.
+* IMO 2023 P6: OK.
 * IMO 2024 P4: incenter / incircle, tangency.
 
 The following are non-geometry and combinatorial geometry problems in
