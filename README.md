@@ -710,7 +710,7 @@ If a line or plane is referred to other than by naming points that
 produce it as an affine span, a hypothesis on the `finrank` of the
 `AffineSubspace` is sufficient to assert that it is a line or a plane,
 without needing to add an explicit `FiniteDimensional` hypothesis
-(since any finite `finrank` implies `FiniteDimensional`).
+(since any finite (nonzero) `finrank` implies `FiniteDimensional`).
 
 If betweenness is stated, it is taken to be strict betweenness.
 However, segments and sides are taken to include their endpoints
