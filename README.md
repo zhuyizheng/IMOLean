@@ -692,10 +692,15 @@ avoiding junk values, and those implications are included as
 hypotheses for the problem whether or not they follow from the other
 hypotheses.
 
-Similarly, a reference to `XY` as a line is taken to imply that `X`
-does not equal `Y` and that is included as a hypothesis, and a
-reference to `XY` being parallel to something is considered a
-reference to it as a line.
+Similarly, a reference to `XY` as a line (or ray) is taken to imply
+that `X` does not equal `Y` and that is included as a hypothesis, and
+a reference to `XY` being parallel to something is considered a
+reference to it as a line.  A reference to `XY` meeting or
+intersecting something (probably a line or circle) is also considered
+a reference to it as a line.  Saying that `XY` and `AB` meet or
+intersect at `P` is considered to mean that `P` lies in the
+intersection (but does not assert that the two lines are different, so
+possibly other points could lie in the intersection as well).
 
 However, such an implicit hypothesis about two points being different
 is included only once for any given two points (even if it follows
@@ -703,8 +708,18 @@ from more than one reference to a line or an angle), if `X ≠ Y` is
 included then `Y ≠ X` is not included separately, and such hypotheses
 are not included in the case where there is also a reference in the
 problem to a triangle including those two points, or to strict
-betweenness of three points including those two.  A reference to a
-triangle is taken to mean a nondegenerate triangle.
+betweenness of three points including those two, or to one point being
+a vertex of a triangle and the other point being in its interior.  A
+reference to a triangle is taken to mean a nondegenerate triangle.
+
+Where such references implying some form of nondegeneracy appear in
+the conclusion of a problem rather than as a hypothesis of the
+problem, the corresponding formal statement appears as part of the
+formal conclusion rather than as a hypothesis (for example, if the
+conclusion of a problem asks something about the circumcircle of a
+triangle `XYZ` that was not mentioned in the hypotheses, the fact that
+those points do form a nondegenerate triangle is considered something
+to be proved).
 
 If a line or plane is referred to other than by naming points that
 produce it as an affine span, a hypothesis on the `finrank` of the
