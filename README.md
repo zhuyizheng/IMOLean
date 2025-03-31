@@ -782,7 +782,7 @@ missing definitions for those problems listed as "OK" in this list.
 * IMO 2014 P3: convex polygons (quadrilateral), tangency.
 * IMO 2014 P4: OK.
 * IMO 2015 P3: cyclic order of five points on a circle, tangency of circles.
-* IMO 2015 P4: order of four points on a line.
+* IMO 2015 P4: cyclic order of five points on a circle.
 * IMO 2016 P1: angle bisectors.
 * IMO 2017 P4: tangency, major and minor arcs.
 * IMO 2018 P1: major and minor arcs.
@@ -792,7 +792,7 @@ missing definitions for those problems listed as "OK" in this list.
 * IMO 2020 P1: convex quadrilateral and its interior, angle bisectors.
 * IMO 2021 P3: OK.
 * IMO 2021 P4: convex quadrilateral, tangency, ray beyond.
-* IMO 2022 P4: convex pentagon and its interior, order of four points on a line.
+* IMO 2022 P4: convex pentagon and its interior.
 * IMO 2023 P2: midpoint of arc, tangency, angle bisector.
 * IMO 2023 P6: OK.
 * IMO 2024 P4: incenter / incircle, tangency.
