@@ -709,8 +709,9 @@ included then `Y ≠ X` is not included separately, and such hypotheses
 are not included in the case where there is also a reference in the
 problem to a triangle including those two points, or to strict
 betweenness of three points including those two, or to one point being
-a vertex of a triangle and the other point being in its interior.  A
-reference to a triangle is taken to mean a nondegenerate triangle.
+a vertex of a triangle (or on a side, or on a line between two
+vertices) and the other point being in its interior.  A reference to a
+triangle is taken to mean a nondegenerate triangle.
 
 Where such references implying some form of nondegeneracy appear in
 the conclusion of a problem rather than as a hypothesis of the
@@ -735,6 +736,15 @@ formulated and contestants might not have been expected to deal with
 them.  A reference to a point being on a side or a segment is
 expressed directly with `Wbtw` rather than more literally with
 `affineSegment`.
+
+Concurrency of lines, circles or other geometrical elements is
+represented as the intersection being a nonempty set of points; the
+same applies where such elements are set to "intersect" or "meet".  If
+they are said to concur, intersect or meet at a named point, that is
+represented as the point being an element of the intersection (of the
+infimum, if all the elements in question are lines or other affine
+subspaces).  Thus, these terms are taken to include the case where two
+or more lines might be the same line.
 
 Distance between a point and a line (or other set) uses
 `Metric.infDist`.
