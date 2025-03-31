@@ -769,33 +769,33 @@ missing definitions for those problems listed as "OK" in this list.
 * IMO 2007 P2: parallelogram, cyclic quadrilateral, angle bisector.
 * IMO 2007 P4: angle bisector, area of triangle.
 * IMO 2008 P1: OK.
-* IMO 2008 P6: convex quadrilateral, incircle, tangency, common external tangents of two circles, ray beyond.
-* IMO 2009 P2: tangency.
+* IMO 2008 P6: convex quadrilateral, incircle, ray beyond.
+* IMO 2009 P2: OK.
 * IMO 2009 P4: angle bisectors, incenter.
 * IMO 2010 P2: incenter, arcs.
-* IMO 2010 P4: tangency.
-* IMO 2011 P6: tangency (both line-to-circle and of two circles), triangle determined by lines.
-* IMO 2012 P1: excircle / excenter / extouch points and tangency.
+* IMO 2010 P4: OK.
+* IMO 2011 P6: triangle determined by lines.
+* IMO 2012 P1: excircle / excenter / extouch points.
 * IMO 2012 P5: OK.
-* IMO 2013 P3: excircles / extouch points and tangency.
+* IMO 2013 P3: excircles / extouch points, right-angled triangle not specifying which vertex.
 * IMO 2013 P4: OK.
-* IMO 2014 P3: convex polygons (quadrilateral), tangency.
+* IMO 2014 P3: convex polygons (quadrilateral).
 * IMO 2014 P4: OK.
-* IMO 2015 P3: cyclic order of five points on a circle, tangency of circles.
+* IMO 2015 P3: cyclic order of five points on a circle.
 * IMO 2015 P4: cyclic order of five points on a circle.
 * IMO 2016 P1: angle bisectors.
-* IMO 2017 P4: tangency, major and minor arcs.
+* IMO 2017 P4: major and minor arcs.
 * IMO 2018 P1: major and minor arcs.
 * IMO 2018 P6: convex quadrilateral and its interior.
 * IMO 2019 P2: OK.
-* IMO 2019 P6: incenter / incircle and tangency / intouch points.
+* IMO 2019 P6: incenter / incircle / intouch points.
 * IMO 2020 P1: convex quadrilateral and its interior, angle bisectors.
 * IMO 2021 P3: OK.
-* IMO 2021 P4: convex quadrilateral, tangency, ray beyond.
+* IMO 2021 P4: convex quadrilateral, ray beyond.
 * IMO 2022 P4: convex pentagon and its interior.
-* IMO 2023 P2: midpoint of arc, tangency, angle bisector.
+* IMO 2023 P2: midpoint of arc, angle bisector.
 * IMO 2023 P6: OK.
-* IMO 2024 P4: incenter / incircle, tangency.
+* IMO 2024 P4: incenter / incircle.
 
 The following are non-geometry and combinatorial geometry problems in
 that period for which a formal statement with geometrical elements
@@ -834,7 +834,6 @@ preparing the pre-2006 list.
 * IMO 1961 P5: geometrical construction
 * IMO 1962 P5: geometrical construction, quadrilateral with circle inscribed
 * IMO 1962 P6: (isosceles triangle not specifying which two edges equal)
-* IMO 1962 P7: (tangency of sphere to line in 3D)
 * IMO 1963 P3: polygon and its interior angles (note that interior angles of a polygon aren't one of the kinds of angle currently in mathlib)
 * IMO 1964 P3: area of a circle
 * IMO 1964 P6: volume of a tetrahedron
@@ -849,7 +848,6 @@ preparing the pre-2006 list.
 * IMO 1976 P3: tiling in 3D
 * IMO 1978 P2: interior of a sphere
 * (IMO 1979 P2 not considered geometrical, would be formalized purely combinatorially)
-* IMO 1983 P4: (right-angled triangle not specifying which vertex)
 * IMO 1984 P5: perimeter of a polygon
 * IMO 1986 P4: center of regular polygon
 * IMO 1990 P2: two arcs determined by the endpoints
