@@ -487,10 +487,11 @@ terminology or notation.  For example, IMO 2024 P1 and IMO 2010 P1
 define the floor function, but the floor function defined in mathlib
 should be used rather than replicating the particular definition given
 in an individual problem statement.  Similarly, IMO 2013 P3 defines
-the excircle of a triangle, but a definition of `exsphere` for a
-simplex (or possibly one of the extouch point) should be added to
-mathlib rather than replicating the problem's own definition in a
-problem statement.
+the excircle of a triangle, but the definition of `exsphere` for a
+simplex in mathlib should be used (or possibly one of the extouch
+point added to mathlib, to provide a standard way of representing that
+concept however it was stated in a particular problem) rather than
+replicating the problem's own definition in a problem statement.
 
 If a problem refers to something happening eventually, or for
 sufficiently large values of some expression, this is expressed
@@ -775,19 +776,19 @@ not by statements).  I don't think there are any such significant gaps
 in API for non-geometry problems without geometrical elements, or
 missing definitions for those problems listed as "OK" in this list.
 
-* IMO 2006 P1: incenter.
+* IMO 2006 P1: OK.
 * IMO 2007 P2: parallelogram, cyclic quadrilateral, angle bisector.
 * IMO 2007 P4: angle bisector, area of triangle.
 * IMO 2008 P1: OK.
-* IMO 2008 P6: convex quadrilateral, incircle, ray beyond.
+* IMO 2008 P6: convex quadrilateral, ray beyond.
 * IMO 2009 P2: OK.
-* IMO 2009 P4: angle bisectors, incenter.
-* IMO 2010 P2: incenter, arcs.
+* IMO 2009 P4: angle bisectors.
+* IMO 2010 P2: arcs.
 * IMO 2010 P4: OK.
 * IMO 2011 P6: triangle determined by lines.
-* IMO 2012 P1: excircle / excenter / extouch points.
+* IMO 2012 P1: extouch points.
 * IMO 2012 P5: OK.
-* IMO 2013 P3: excircles / extouch points, right-angled triangle not specifying which vertex.
+* IMO 2013 P3: extouch points, right-angled triangle not specifying which vertex.
 * IMO 2013 P4: OK.
 * IMO 2014 P3: convex polygons (quadrilateral).
 * IMO 2014 P4: OK.
@@ -798,14 +799,14 @@ missing definitions for those problems listed as "OK" in this list.
 * IMO 2018 P1: major and minor arcs.
 * IMO 2018 P6: convex quadrilateral and its interior.
 * IMO 2019 P2: OK.
-* IMO 2019 P6: incenter / incircle / intouch points.
+* IMO 2019 P6: intouch points.
 * IMO 2020 P1: convex quadrilateral and its interior, angle bisectors.
 * IMO 2021 P3: OK.
 * IMO 2021 P4: convex quadrilateral, ray beyond.
 * IMO 2022 P4: convex pentagon and its interior.
 * IMO 2023 P2: midpoint of arc, angle bisector.
 * IMO 2023 P6: OK.
-* IMO 2024 P4: incenter / incircle.
+* IMO 2024 P4: OK.
 
 The following are non-geometry and combinatorial geometry problems in
 that period for which a formal statement with geometrical elements
