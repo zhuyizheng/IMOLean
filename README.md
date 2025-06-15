@@ -711,8 +711,15 @@ are not included in the case where there is also a reference in the
 problem to a triangle including those two points, or to strict
 betweenness of three points including those two, or to one point being
 a vertex of a triangle (or on a side, or on a line between two
-vertices) and the other point being in its interior.  A reference to a
-triangle is taken to mean a nondegenerate triangle.
+vertices, including more specific constructions such as the midpoint
+of a side) and the other point being in its interior (including more
+specific constructions guaranteed to be in the interior, such as the
+centroid or incenter); a point on the circumcircle of a triangle,
+constructed as the second intersection with the circumcircle of a line
+through a vertex and an interior point of the triangle, does not need
+a hypothesis that it is different from any point on the boundary of
+the triangle.  A reference to a triangle is taken to mean a
+nondegenerate triangle.
 
 Where such references implying some form of nondegeneracy appear in
 the conclusion of a problem rather than as a hypothesis of the
