@@ -344,7 +344,11 @@ However, for the domain of a function that is the subject of a problem
 (typically a functional equation), a more restricted type is used to
 avoid the function in the formal statement having additional junk
 information (values at arguments that do are not part of the domain in
-the informal statement).
+the informal statement).  If a function type is itself the domain of
+another function (including a local definition in the informal problem
+statement), that makes it appropriate to use a more restricted type
+for the codomain of that function type to avoid junk values for the
+other function or definition,
 
 In the limited case where the informal statement has restricted types
 for both the domain and codomain and expressions that are only valid
@@ -717,8 +721,10 @@ centroid or incenter); a point on the circumcircle of a triangle,
 constructed as the second intersection with the circumcircle of a line
 through a vertex and an interior point of the triangle, does not need
 a hypothesis that it is different from any point on the boundary of
-the triangle.  A reference to a triangle is taken to mean a
-nondegenerate triangle.
+the triangle.  If a center cannot equal a vertex of a triangle (for
+example, the circumcenter), no hypothesis is needed that they are
+different.  A reference to a triangle is taken to mean a nondegenerate
+triangle.
 
 Where such references implying some form of nondegeneracy appear in
 the conclusion of a problem rather than as a hypothesis of the
@@ -819,6 +825,7 @@ missing definitions for those problems listed as "OK" in this list.
 * IMO 2023 P2: midpoint of arc, angle bisector.
 * IMO 2023 P6: OK.
 * IMO 2024 P4: OK.
+* IMO 2025 P2: OK.
 
 The following are non-geometry and combinatorial geometry problems in
 that period for which a formal statement with geometrical elements
@@ -837,6 +844,7 @@ indicating what definitions should be added.
 * IMO 2017 P3: OK.
 * IMO 2018 P4: OK (only technically geometrical for \sqrt{5} distance)
 * IMO 2020 P6: OK.
+* IMO 2025 P1: OK.
 
 The following are pre-2006 problems where some definition not in the
 above lists seems appropriate to add to mathlib for a clean formal
