@@ -15,4 +15,4 @@ More solutions are being written. Currently available solutions are as follows.
 - [2024-P6](./IMO/IMO2024P6.lean)
 
 ### 2025 Solutions
-- [2025-P1](./IMO/IMO2025P1.lean)
+- [2025-P1](./IMO/IMO2025P1.lean), made a [PR](https://github.com/leanprover-community/mathlib4/pull/27817) to mathlib
